@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce</h1>
+        <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </header>
+
+    <!-- Product Listings -->
+    <main>
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10.00</p>
+            <button onclick="addToCart(1, 'Product 1', 10)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $15.00</p>
+            <button onclick="addToCart(2, 'Product 2', 15)">Add to Cart</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
